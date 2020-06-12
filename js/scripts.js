@@ -1,4 +1,8 @@
 // Business Logic
+function beepboop(userInput) {
+  if (userInput < 0);
+    alert("please enter a number greater than 0")
+}
 
 // User Interface
 $(document).ready(function(){
