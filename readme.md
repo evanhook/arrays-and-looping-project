@@ -5,34 +5,34 @@
 #### By: Elizabeth Van Hook
 
 ## Description
-This page will take a user inputted number and return a combination of numbers and strings depending on the number given .To view my page, click on this link: ADD GH PAGES!!!
+This page will take a user inputted number and return a combination of numbers and strings depending on the number given. Link to GH-Pages: TBD
+
 
 ## Specifications
 
 An alert will appear if a user inputs a negative number.
-Input: one  "-1"
-Output: "Please enter a number"
+* Input: one  "-1"
+* Output: "Please enter a number"
 
 If a user inputs any number containing a 1 where 1 is the largest number in the string of numbers, the program will return the string "Beep!"
-Input: "1"
-Output: "Beep!"
+* Input: "1"
+* Output: "Beep!"
 
 If a user inputs any number containing a 2 where 2 is the largest number in the string of numbers, the program  will return the string "Boop!"
-Input: "2" 
-Output: "Boop!"
+* Input: "2" 
+* Output: "Boop!"
 
 If a user inputs any number containing a 3 where 3 is the largest number in the string of numbers, the program will return the string "Won't you be my neighbor?"
-Input: "3"
-Output: "Won't you be my neighbor?"
+* Input: "3"
+* Output: "Won't you be my neighbor?"
 
-            The program returns a range of numbers from 0 to the users inputted number
-            Input: "4"
-            Output: "0, 1, 2, 3, 4"
+The program returns a range of numbers from 0 to the user's inputted number
+* Input: "4"
+* Output: "0, 1, 2, 3, 4"
 
-            If the user input does not contain a 1, 2, or 3, the program will count up to their input and replace all 1, 2, and 3 with the corresponding strings.
-            Input: 7
-            Output: 0, Beep!, Boop!, "Won't you be my neighbor?, 4, 5, 6, 7
-
+If the user input doesn't contain a 1, 2, or 3, the program will count up to their input and replace all 1, 2, and 3's with the cooresponding strings
+* Input: "5"
+* Output: "0, Beep!, Boop!, Wont you be my neighbor?, 4, 5"
 
 ## Setup & Installation
 * Clone repository using this link: https://github.com/evanhook/arrays-and-looping-project.git
@@ -49,6 +49,8 @@ Output: "Won't you be my neighbor?"
 * Javascript
 
 ## Known Bugs
+* Program does not return number range for numbers that do not have a 1, 2, 0r 3
+* Program does not exclude letters or special charcter inputs
 * 
 
 ## Contact Information
