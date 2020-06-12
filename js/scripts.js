@@ -23,7 +23,9 @@ $(document).ready(function(){
         output.push(greetingArray[1]);
       } else if (userInput.includes(transformNum[0])) {
         output.push(greetingArray[0]);;
-      } 
+      } else if (!userInput.includes(transformNum[2,1,0])) {
+        output.push("placeholder");
+      }
     })
 
 
@@ -32,10 +34,7 @@ $(document).ready(function(){
 });
 
 //if the user input does not contain a 123, show a count starting at 0 and replacing all 123 with the strings and the other numbers as numbers
-else if (userInput.includes(otherNum) && !userInput.includes(transformNum)) {
-  output.push(greetingArray[2]);;
-}
 
 //else if (userInput.includes(otherNum) && !userInput.includes(transformNum)) {
  // output.push("Please enter a number");;
-//}
+//
