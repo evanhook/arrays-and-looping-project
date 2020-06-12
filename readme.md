@@ -13,10 +13,6 @@ An alert will appear if a user inputs a negative number.
 Input: one  "-1"
 Output: "Please enter a number"
 
-The program returns a range of numbers from 0 to the users inputted number
-Input: "4"
-Output: "0, 1, 2, 3, 4"
-
 If a user inputs any number containing a 1 where 1 is the largest number in the string of numbers, the program will return the string "Beep!"
 Input: "1"
 Output: "Beep!"
@@ -29,9 +25,13 @@ If a user inputs any number containing a 3 where 3 is the largest number in the 
 Input: "3"
 Output: "Won't you be my neighbor?"
 
-If the user input does not contain a 1, 2, or 3, the program will count up to their input and replace all 1, 2, and 3 with the corresponding strings.
-Input: 7
-Output: 0, Beep!, Boop!, "Won't you be my neighbor?, 4, 5, 6, 7
+            The program returns a range of numbers from 0 to the users inputted number
+            Input: "4"
+            Output: "0, 1, 2, 3, 4"
+
+            If the user input does not contain a 1, 2, or 3, the program will count up to their input and replace all 1, 2, and 3 with the corresponding strings.
+            Input: 7
+            Output: 0, Beep!, Boop!, "Won't you be my neighbor?, 4, 5, 6, 7
 
 
 ## Setup & Installation
@@ -47,6 +47,9 @@ Output: 0, Beep!, Boop!, "Won't you be my neighbor?, 4, 5, 6, 7
 * Bootstrap
 * JQuery
 * Javascript
+
+## Known Bugs
+* 
 
 ## Contact Information
 Elizabeth Van Hook, evanhook360@gmail.com
