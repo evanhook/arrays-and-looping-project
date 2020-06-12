@@ -22,10 +22,9 @@ $(document).ready(function(){
       } else if (userInput.includes(transformNum[1])) {
         output.push(greetingArray[1]);
       } else if (userInput.includes(transformNum[0])) {
-        output.push(greetingArray[0]);;
-      } else if (userInput.includes(otherNum)){
-        while (userInput > 0 && !userInput.includes(transformNum[0,1,2]))
-          console.log(output);
+        output.push(greetingArray[0]);
+      } else if (!userInput.includes(transformNum)){
+        output.push("placeholder");
       }
     });
 
@@ -33,20 +32,3 @@ $(document).ready(function(){
     $("#numOutput").text(output);
   }); 
 });
-
-//if the user input does not contain a 123, show a count starting at 0 and replacing all 123 with the strings and the other numbers as numbers
-
-
-  //output.push(element)
-//}
-
-
-//else if (!userInput.includes(transformNum[2,1,0])) {
- // output.push("placeholder");
-//}
-/*
-const otherNum = ["0", "4", "5", "6", "7", "8", "9"];
-let output = [];
-while (userInput > 0 && !userInput.includes(transformNum[0,1,2])) {
-  console.log(output)
-*/

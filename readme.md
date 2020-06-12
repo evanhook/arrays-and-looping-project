@@ -9,29 +9,25 @@ This page will take a user inputted number and return a combination of numbers a
 
 ## Specifications
 
-An alert will appear if a user inputs a non-numerical character or negative number.
-Input: one  -1
-Output: Please enter a number
+An alert will appear if a user inputs a negative number.
+Input: one  "-1"
+Output: "Please enter a number"
 
-If a user inputs 1 the program will return the string "Beep!"
-Input: 1
-Output: Beep!
+The program returns a range of numbers from 0 to the users inputted number
+Input: "4"
+Output: "0, 1, 2, 3, 4"
 
-If a user inputs 2 the program  will return the strings "Beep" and "Boop!"
-Input: 2
-Output: Beep!, Boop!
-
-If a user inputs 3 the program will return the strings "Beep", "Boop", "Won't you be my neighbor?"
-Input: 3
-Output: Beep!, Boop!, Won't you be my neighbor?
-
-If the number is greater than 3, the program will check to see if the user input contains a 3, 2, or 1 and will return the string that cooresponds with the largest number.
-Input: 32
-Output: "Won't you be my neighbor?"
-Input: 21
-Output: "Boop!"
-Input: 10
+If a user inputs any number containing a 1 where 1 is the largest number in the string of numbers, the program will return the string "Beep!"
+Input: "1"
 Output: "Beep!"
+
+If a user inputs any number containing a 2 where 2 is the largest number in the string of numbers, the program  will return the string "Boop!"
+Input: "2" 
+Output: "Boop!"
+
+If a user inputs any number containing a 3 where 3 is the largest number in the string of numbers, the program will return the string "Won't you be my neighbor?"
+Input: "3"
+Output: "Won't you be my neighbor?"
 
 If the user input does not contain a 1, 2, or 3, the program will count up to their input and replace all 1, 2, and 3 with the corresponding strings.
 Input: 7
