@@ -1,12 +1,5 @@
 // Business Logic
-
-//this excludes negative numbers and letters
-function robogerResponse(userInput) {
-  if (userInput < 0){
-    alert("please enter a number greater than 0");
-  }
-} 
-
+  
 
 // User Interface
 $(document).ready(function(){
@@ -15,19 +8,23 @@ $(document).ready(function(){
     let output = [""]
     const userInput = parseInt($("input#userNum").val());
     $("#numOutput").text(output);
-    
+
+    if (userInput < 0){
+      alert("please enter a number greater than 0");
+    } else if (userInput === 1) {
+      $("div#numOutput").text("Beep!");
+    } else if (userInput === 2) {
+      $("div#numOutput").text("Boop!");
+    } else if (userInput ===3) {
+      $("div#numOutput").text("Won't you be my neighbor?");
+    } else if (userInput )
   });
 });
 
 
-
-/*testing loop here:
-const numbers = [1, 2, 3]
-const response = ["Beep!", "Boop!", "Won't you be my neighbor?"];
-//let robogerResponse =[""];
-
+/*const array = [1,2,3];
+let transformArray = [];
 for (let index = 0; index <= userInput.length; index++) {
-let foundNum = userInput.find(element => element < 4);
-  console.log(foundNum);
-}
+  transformArray.split("");
+};
 */
