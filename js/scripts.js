@@ -4,7 +4,9 @@ const transformNum = ["1", "2", "3"];
 const greetingArray = ["Beep!", "Boop!", "Won't you be my neighbor?"];
 let output = [];
 function robogerResponse(userInput, userValue) {
-  if (userInput < 0 || userInput === NaN) {
+  //userValue = parseInt(userValue)
+  //userInput = parseInt(userInput);
+  if (userValue < 0 || isNaN(userValue)) {
     output.push("Please enter a number greater than 0");
   } else if (userInput.includes(transformNum[2])) {
     output.push(greetingArray[2]);
@@ -12,17 +14,20 @@ function robogerResponse(userInput, userValue) {
     output.push(greetingArray[1]);
   } else if (userInput.includes(transformNum[0])) {
     output.push(greetingArray[0]);
-  } for(let i=0; i<userValue; i++) {
-    //i=i.split("");
-    if (i.includes(transformNum[2])){
-      output.push(greetingArray[2]);
-     } else if (i.includes(transformNum[1])) {
-      output.push(greetingArray[1]);
-     } else if (i.includes(transformNum[0])) {
-      output.push (greetingArray[0])
-     } else {
-      output.push(i+1);
-     }
+  } else {
+    for(let i=1; i<=userValue; i++) {
+      let stringi = i.toString()
+      if (stringi.includes(transformNum[2])){
+        output.push(greetingArray[2]);
+      } else if (stringi.includes(transformNum[1])) {
+        output.push(greetingArray[1]);
+      } else if (stringi.includes(transformNum[0])) {
+        output.push (greetingArray[0])
+      } else {
+        output.push(i);
+      }
+    }
+
   }
 };
 
